@@ -7,7 +7,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .keywords{
-    opacity: 0 ;   
+    color:#cccccc;
+    font-size:1px;
+}
+footer .keywords{
+    color:#F3976C;
 }
 .paragraphe{
     font-size: 20px;
