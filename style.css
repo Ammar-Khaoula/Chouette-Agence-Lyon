@@ -672,6 +672,8 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
+    margin-right: 120px;
+    font-size: 20px;
     color: #575757!important;
 }
 
