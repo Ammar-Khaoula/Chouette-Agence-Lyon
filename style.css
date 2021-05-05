@@ -10,8 +10,9 @@ body {
     color:#cccccc;
     font-size:1px;
 }
-footer .keywords{
+#color{
     color:#F3976C;
+    margin-bottom:30px;
 }
 .paragraphe{
     font-size: 20px;
