@@ -675,13 +675,20 @@ h5,
 h6,
 p,
 label,
-.btn,
-li {
+.btn
+{
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+li{
+    color: #0a0a0a!important;
+    padding: 5px;
+    font-size: 15px;
+}
+.col-sm-4{
+    font-size: 17px;
+}
 .container {
     max-width: 1000px;
 }
@@ -919,6 +926,7 @@ h4 {
 
 @media (max-width: 767px) {
     #nom{
+
        margin-left: 180px;
     }
     .page-container {
