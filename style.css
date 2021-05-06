@@ -21,13 +21,16 @@ body {
 #nom{
     font-size: 14px;
     color: #757474;
-    position: relative;
-    left: 380px;
+    margin-left: 360px;
 }
 h4{
     font-size: 30px;
 }
-
+.reseau-sociau{
+    height: 48px;
+    width: 48px;
+    font-size: 30px;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -460,6 +463,8 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-weight: bolder;
+    color: #0a0a0a;
 }
 
 .mg-lg {
@@ -671,7 +676,7 @@ h6,
 p,
 label,
 .btn,
-a {
+li {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -700,7 +705,7 @@ a {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -913,6 +918,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    #nom{
+       margin-left: 180px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
