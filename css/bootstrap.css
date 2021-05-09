@@ -160,12 +160,6 @@ html input[disabled] {
     cursor: default
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    padding: 0;
-    border: 0
-}
-
 input {
     line-height: normal
 }
@@ -1385,7 +1379,6 @@ a:hover {
 
 a:focus {
     outline: thin dotted;
-    outline: 5px auto focus-ring-color;
     outline-offset: -2px
 }
 
@@ -3059,7 +3052,6 @@ label {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
     line-height: normal
 }
 
@@ -3081,7 +3073,6 @@ input[type=file]:focus,
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: thin dotted;
-    outline: 5px auto focus-ring-color;
     outline-offset: -2px
 }
 
@@ -3115,15 +3106,6 @@ output {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
 }
 
-.form-control::-moz-placeholder {
-    color: #999;
-    opacity: 1
-}
-
-.form-control:-ms-input-placeholder {
-    color: #999
-}
-
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
@@ -3139,35 +3121,6 @@ fieldset[disabled] .form-control {
 textarea.form-control {
     height: auto
 }
-@media screen and (min-pixel-ratio:0) {
-    input[type=date].form-control,
-    input[type=time].form-control,
-    input[type=datetime-local].form-control,
-    input[type=month].form-control {
-        line-height: 34px
-    }
-    .input-group-sm input[type=date],
-    .input-group-sm input[type=time],
-    .input-group-sm input[type=datetime-local],
-    .input-group-sm input[type=month],
-    input[type=date].input-sm,
-    input[type=time].input-sm,
-    input[type=datetime-local].input-sm,
-    input[type=month].input-sm {
-        line-height: 30px
-    }
-    .input-group-lg input[type=date],
-    .input-group-lg input[type=time],
-    .input-group-lg input[type=datetime-local],
-    .input-group-lg input[type=month],
-    input[type=date].input-lg,
-    input[type=time].input-lg,
-    input[type=datetime-local].input-lg,
-    input[type=month].input-lg {
-        line-height: 46px
-    }
-}
-
 .form-group {
     margin-bottom: 15px
 }
@@ -3616,7 +3569,6 @@ textarea.input-lg {
 .btn:active:focus,
 .btn:focus {
     outline: thin dotted;
-    outline: 5px auto focus-ring-color;
     outline-offset: -2px
 }
 
@@ -3638,7 +3590,6 @@ textarea.input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    filter: alpha(opacity=65);
     box-shadow: none;
     opacity: .65
 }
@@ -4107,18 +4058,11 @@ fieldset[disabled] .btn-link {
     box-shadow: none
 }
 
-.btn-link,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:hover {
-    border-color: transparent
-}
 
 .btn-link:focus,
 .btn-link:hover {
     color: #23527c;
     text-decoration: underline;
-    background-color: transparent
 }
 
 .btn-link[disabled]:focus,
@@ -4294,7 +4238,6 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -5040,7 +4983,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -6075,24 +6018,6 @@ a.thumbnail:hover {
     }
 }
 
-@-o-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
-}
-
-@keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
-}
-
 .progress {
     height: 20px;
     margin-bottom: 20px;
@@ -6169,7 +6094,6 @@ a.thumbnail:hover {
 .media,
 .media-body {
     overflow: hidden;
-    zoom: 1
 }
 
 .media-body {
@@ -6934,7 +6858,6 @@ button.list-group-item-danger.active:hover {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
     opacity: .2
 }
 
@@ -6943,7 +6866,6 @@ button.list-group-item-danger.active:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
@@ -7017,7 +6939,6 @@ button.close {
 }
 
 .modal-backdrop.in {
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
@@ -7112,7 +7033,6 @@ button.close {
 }
 
 .tooltip.in {
-    filter: alpha(opacity=90);
     opacity: .9
 }
 
@@ -7458,13 +7378,11 @@ button.close {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
 .carousel-control.left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
     background-repeat: repeat-x
 }
 
@@ -7472,7 +7390,6 @@ button.close {
     right: 0;
     left: auto;
     background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x
 }
 
@@ -7480,7 +7397,6 @@ button.close {
 .carousel-control:hover {
     color: #fff;
     text-decoration: none;
-    filter: alpha(opacity=90);
     outline: 0;
     opacity: .9
 }
@@ -7543,7 +7459,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
@@ -7694,11 +7609,6 @@ button.close {
 .affix {
     position: fixed
 }
-
-@-ms-viewport {
-    width: device-width
-}
-
 .visible-lg,
 .visible-md,
 .visible-sm,
