@@ -23,7 +23,7 @@ body {
     color: #757474;
     margin-left: 360px;
 }
-#titre-invisible{
+.titre-invisible{
     opacity: 0;
 }
 h4{
