@@ -16,9 +16,6 @@ body {
     font-size: 20px;
     text-align: center;
 }
-#color{
-    text-align: center;
-}
 .titre-invisible{
     opacity: 0;
 }
@@ -274,7 +271,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 15px;
     font-size: 20px;   
@@ -669,6 +666,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -856,6 +855,10 @@ h4 {
 
        margin-left: 180px;
     }
+    .paragraphe{
+        font-size: 15px;
+        font-weight: 500;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -889,8 +892,8 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .5);
+        border-bottom: 3px solid rgba(0, 0, 0, .1);
+        background: rgba(163, 162, 162, 0.5);
         text-align: left;
         padding-left: 15px;
         width: 100%;
