@@ -25,7 +25,7 @@ body {
 h4{
     font-size: 30px;
 }
-li{
+.nav li{
     list-style-type: none;
     font-weight: bold;
 }
@@ -79,18 +79,16 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-.bloc-bg-texture::before {
+
+.texture-paper::before {
     content: "";
-    background-size: 2px 2px;
+    background: url("images/texture-paper.png");
+    background-size: 280px 280px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-.texture-paper::before {
-    background: url("images/texture-paper.png");
-    background-size: 280px 280px;
 }
 .b-parallax {
     background-attachment: fixed;
@@ -270,7 +268,7 @@ a:hover {
 
 .navbar .nav {
     padding: 20px;
-    margin-right: 40px;    
+    margin-right: 55px;    
 }
 
 .nav > li {
@@ -705,7 +703,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #070707!important;
+    font-weight: bold;
 }
 
 .portfolio-thumb {
