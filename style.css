@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 }
 .paragraphe{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 .titre-invisible{
@@ -837,7 +837,7 @@ h3 {
        margin-left: 180px;
     }
     .paragraphe{
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 500;
     }
     .page-container {
