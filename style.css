@@ -251,6 +251,7 @@ a:hover {
 
 .navbar-brand img {
     height: 40px;
+    width: 220px;
     margin-right: 5px;
     display: inline;
 }
@@ -778,7 +779,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("images/dots-bg.png");
+    background-image: url("images/dots-bg.jpg");
 }
 
 .bg-lines-h2-bg {
@@ -790,7 +791,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("images/image-de-presentation.png");
+    background-image: url("images/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
