@@ -4197,8 +4197,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .input-group-btn {
     position: relative;
-    font-size: 12;
-    white-space: nowrap
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .input-group-btn>.btn {
