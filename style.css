@@ -3,6 +3,8 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .paragraphe{
     font-size: 15px;
@@ -43,6 +45,8 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+
 }
 
 .bloc {
@@ -50,6 +54,9 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -69,15 +76,36 @@ a:hover {
     background: top no-repeat;
 }
 
-.texture-paper::before {
+.bloc-bg-texture::before {
     content: "";
-    background: url("images/texture-paper.png");
-    background-size: 280px 280px;
+    background-size: 2px 2px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.texture-paper::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
+}
+
+.d-bloc {
+    color: #000000;
+}
+.bg-center,
+.bg-l-edge,
+.bg-r-edge,
+.bg-t-edge,
+.bg-b-edge,
+.bg-tl-edge,
+.bg-bl-edge,
+.bg-tr-edge,
+.bg-br-edge,
+.bg-repeat {
+    -webkit-background-size: auto!important;
+    background-size: auto!important;
 }
 .b-parallax {
     background-attachment: fixed;
@@ -759,7 +787,7 @@ h3 {
 }
 
 .bg-dots-bg {
-    background-image: url("images/dots-bg.jpg");
+    background-image: url("images/texture-paper.png");
 }
 
 .bg-lines-h2-bg {
