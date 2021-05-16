@@ -4649,11 +4649,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    width: 330px;
-    height: 270px;
+    width: 320px;
+    height: 250px;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
 }
     .navbar-nav .open .dropdown-menu {
         position: static;

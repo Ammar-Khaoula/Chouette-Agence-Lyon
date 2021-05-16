@@ -7,8 +7,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .paragraphe{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
+    font-weight: 450;
+}
+#author{
+    font-size: 14;
+    text-align: center;
+}
+#italic{
+    font-style: italic;
 }
 .titre-invisible{
     opacity: 0;
@@ -862,12 +870,13 @@ h3 {
 
 @media (max-width: 767px) {
     #nom{
-
        margin-left: 180px;
     }
-    .paragraphe{
+    #author{
         font-size: 12px;
-        font-weight: 500;
+    }
+    .paragraphe{
+        font-size: 13px;
     }
     .page-container {
         overflow-x: hidden;
