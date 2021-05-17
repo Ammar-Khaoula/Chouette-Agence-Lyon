@@ -9,10 +9,9 @@ body {
 .paragraphe{
     font-size: 20px;
     text-align: center;
-    font-weight: 450;
 }
 #author{
-    font-size: 14;
+    font-size: 14px;
     text-align: center;
 }
 #italic{
